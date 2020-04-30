@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1b-4a-D20">
+                                <rect key="frame" x="20" y="132" width="374" height="44"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="nOC-Ih-BU1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-9o-RpT">
+                                <rect key="frame" x="67" y="419" width="280" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BpC-zq-GMW"/>
+                                    <constraint firstAttribute="height" constant="30" id="esg-AU-Bh1"/>
+                                </constraints>
+                                <state key="normal" title="获取当前时间">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCurrentDate" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkR-Sv-ZE8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJv-aJ-4YX">
+                                <rect key="frame" x="67" y="479" width="280" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CBt-2r-rye"/>
+                                    <constraint firstAttribute="width" constant="280" id="IRv-en-i3u"/>
+                                </constraints>
+                                <state key="normal" title="查看今天是在今年的第几周">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCurrentWeek" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMm-wQ-bHg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjt-Pz-HxP">
+                                <rect key="frame" x="67" y="539" width="280" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8kV-wf-12x"/>
+                                    <constraint firstAttribute="width" constant="280" id="eVX-OC-DKx"/>
+                                </constraints>
+                                <state key="normal" title="现在往后5天8小时">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getAfterDate" destination="BYZ-38-t0r" eventType="touchUpInside" id="bqb-dz-vow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bjt-Pz-HxP" firstAttribute="width" secondItem="aqA-9o-RpT" secondAttribute="width" id="7pK-Da-xmF"/>
+                            <constraint firstItem="dJv-aJ-4YX" firstAttribute="height" secondItem="aqA-9o-RpT" secondAttribute="height" id="BtH-Xu-v8R"/>
+                            <constraint firstItem="aqA-9o-RpT" firstAttribute="top" secondItem="x1b-4a-D20" secondAttribute="bottom" constant="243" id="RpM-i1-5Qx"/>
+                            <constraint firstItem="Bjt-Pz-HxP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tnl-J4-tH4"/>
+                            <constraint firstItem="x1b-4a-D20" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XB3-Zh-cld"/>
+                            <constraint firstItem="dJv-aJ-4YX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZVN-23-yXa"/>
+                            <constraint firstItem="x1b-4a-D20" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="bqw-g7-6tX"/>
+                            <constraint firstItem="Bjt-Pz-HxP" firstAttribute="height" secondItem="aqA-9o-RpT" secondAttribute="height" id="dRT-vd-6oX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x1b-4a-D20" secondAttribute="trailing" constant="20" id="grE-3O-sYn"/>
+                            <constraint firstItem="Bjt-Pz-HxP" firstAttribute="top" secondItem="dJv-aJ-4YX" secondAttribute="bottom" constant="30" id="l7u-MV-qhD"/>
+                            <constraint firstItem="aqA-9o-RpT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lfB-pC-U7u"/>
+                            <constraint firstItem="dJv-aJ-4YX" firstAttribute="top" secondItem="aqA-9o-RpT" secondAttribute="bottom" constant="30" id="xuv-k5-RP1"/>
+                            <constraint firstItem="dJv-aJ-4YX" firstAttribute="width" secondItem="aqA-9o-RpT" secondAttribute="width" id="y2Z-Na-9KX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="x1b-4a-D20" id="KDz-Fg-6SQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
